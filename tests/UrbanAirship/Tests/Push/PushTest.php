@@ -31,7 +31,7 @@ class PushTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/push', $request->getPath());
+        $this->assertEquals('/api/push/', $request->getPath());
         $this->assertEquals('POST', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());
@@ -55,7 +55,7 @@ class PushTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/push', $request->getPath());
+        $this->assertEquals('/api/push/', $request->getPath());
         $this->assertEquals('POST', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());
@@ -76,7 +76,7 @@ class PushTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/push/broadcast', $request->getPath());
+        $this->assertEquals('/api/push/broadcast/', $request->getPath());
         $this->assertEquals('POST', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());
@@ -102,7 +102,7 @@ class PushTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/push', $request->getPath());
+        $this->assertEquals('/api/push/', $request->getPath());
         $this->assertEquals('POST', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());
@@ -127,7 +127,7 @@ class PushTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/push', $request->getPath());
+        $this->assertEquals('/api/push/', $request->getPath());
         $this->assertEquals('POST', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());
@@ -148,7 +148,7 @@ class PushTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/push/broadcast', $request->getPath());
+        $this->assertEquals('/api/push/broadcast/', $request->getPath());
         $this->assertEquals('POST', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());
@@ -173,7 +173,7 @@ class PushTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/push', $request->getPath());
+        $this->assertEquals('/api/push/', $request->getPath());
         $this->assertEquals('POST', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());
@@ -193,7 +193,7 @@ class PushTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/push/broadcast', $request->getPath());
+        $this->assertEquals('/api/push/broadcast/', $request->getPath());
         $this->assertEquals('POST', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());
@@ -227,7 +227,7 @@ class PushTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/push/batch', $request->getPath());
+        $this->assertEquals('/api/push/batch/', $request->getPath());
         $this->assertEquals('POST', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());

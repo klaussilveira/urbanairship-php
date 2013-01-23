@@ -19,7 +19,7 @@ class ClientTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/device_tokens', $request->getPath());
+        $this->assertEquals('/api/device_tokens/', $request->getPath());
         $this->assertEquals('GET', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());
@@ -89,7 +89,7 @@ class ClientTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/device_tokens/count', $request->getPath());
+        $this->assertEquals('/api/device_tokens/count/', $request->getPath());
         $this->assertEquals('GET', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());

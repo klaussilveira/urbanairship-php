@@ -17,7 +17,7 @@ class DeviceTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/device_pins/123456789', $request->getPath());
+        $this->assertEquals('/api/device_pins/123456789/', $request->getPath());
         $this->assertEquals('PUT', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());
@@ -32,7 +32,7 @@ class DeviceTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/device_pins/123456789', $request->getPath());
+        $this->assertEquals('/api/device_pins/123456789/', $request->getPath());
         $this->assertEquals('PUT', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());
@@ -48,7 +48,7 @@ class DeviceTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/device_pins/123456789', $request->getPath());
+        $this->assertEquals('/api/device_pins/123456789/', $request->getPath());
         $this->assertEquals('DELETE', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());
@@ -67,7 +67,7 @@ class DeviceTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/device_pins/123456789', $request->getPath());
+        $this->assertEquals('/api/device_pins/123456789/', $request->getPath());
         $this->assertEquals('GET', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());
@@ -87,7 +87,7 @@ class DeviceTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/device_tokens/123456789', $request->getPath());
+        $this->assertEquals('/api/device_tokens/123456789/', $request->getPath());
         $this->assertEquals('PUT', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());
@@ -108,7 +108,7 @@ class DeviceTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/device_tokens/123456789', $request->getPath());
+        $this->assertEquals('/api/device_tokens/123456789/', $request->getPath());
         $this->assertEquals('PUT', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());
@@ -124,7 +124,7 @@ class DeviceTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/device_tokens/123456789', $request->getPath());
+        $this->assertEquals('/api/device_tokens/123456789/', $request->getPath());
         $this->assertEquals('DELETE', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());
@@ -143,7 +143,7 @@ class DeviceTest extends UrbanAirshipTestCase
 
         $request = $this->getLastMockedRequest();
         $this->assertEquals('go.urbanairship.com', $request->getHost());
-        $this->assertEquals('/api/device_tokens/123456789', $request->getPath());
+        $this->assertEquals('/api/device_tokens/123456789/', $request->getPath());
         $this->assertEquals('GET', $request->getMethod());
         $this->assertEquals('abc', $request->getUsername());
         $this->assertEquals('xyz', $request->getPassword());
