@@ -80,11 +80,11 @@ class AppleNotification extends AbstractNotification
     public function getPayload()
     {
         $payload = array(
-            'device_tokens' => array_map(function($device) { return $device->getId(); }, $this->devices),
+            'device_tokens' => array_map(function ($device) { return $device->getId(); }, $this->devices),
             'aliases' => $this->alias,
             'tags' => $this->tags,
-            'schedule_for' => array_map(function($date) { return $date->format('c'); }, $this->schedule),
-            'exclude_tokens' => array_map(function($device) { return $device->getId(); }, $this->exclude),
+            'schedule_for' => array_map(function ($date) { return $date->format('c'); }, $this->schedule),
+            'exclude_tokens' => array_map(function ($device) { return $device->getId(); }, $this->exclude),
             'aps' => array(
                 'badge' => $this->badge,
                 'alert' => $this->alert,

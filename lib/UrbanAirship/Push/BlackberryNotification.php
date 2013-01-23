@@ -60,7 +60,7 @@ class BlackberryNotification extends AbstractNotification
     public function getPayload()
     {
         $payload = array(
-            'device_pins' => array_map(function($device) { return $device->getId(); }, $this->devices),
+            'device_pins' => array_map(function ($device) { return $device->getId(); }, $this->devices),
             'aliases' => $this->alias,
             'tags' => $this->tags,
             'blackberry' => array(
