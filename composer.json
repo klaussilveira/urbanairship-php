@@ -1,5 +1,5 @@
 {
-    "name": "klaussilveira/urbanairship-php",
+    "name": "arianmaykon/urbanairship-php",
     "description": "PHP library that provides a simple way to communicate with Urban Airship services",
     "keywords": ["urbanairship", "push notification", "urbanairship-php"],
     "homepage": "https://github.com/klaussilveira/urbanairship-php",
